@@ -12,3 +12,18 @@ GAN(Generative Adversarial Networks)，实际上也是基于这个思想，只�
 ## 数学表达
 Ivan Goodfellow在2014年在[Generative Adversarial Nets](https://arxiv.org/pdf/1406.2661v1.pdf)中详细描述了GAN的实现过程，并使用简洁的数学表达式表示对抗生成网络：<br>
 ![GAN formula](https://github.com/figoliu/GANs/blob/master/resources/ganformula.png)
+这个公式非常简洁，意义前面已经介绍过，对于生成器G，最小化生成结果和真实结果之间的差异；对于判别器D，最大化生成结果和真实结果之间的差异；直到判别器无法判别（正确率50%）。
+## 安装GANs
+
+GANs的后端基于Tensorflow，如果有GPU可用，则使用Tensorflow GPU版本：
+```sh
+pip3 install -i https://pypi.douban.com/simple tensorflow-gpu
+```
+安装CPU版本：
+```sh
+pip3 install -i https://pypi.douban.com/simple tensorflow
+```
+安装其他依赖包：
+```sh
+pip3 install -r requirements.txt -i https://pypi.douban.com/simple
+```

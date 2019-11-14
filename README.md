@@ -11,4 +11,4 @@
 GAN(Generative Adversarial Networks)，实际上也是基于这个思想，只是比较生成图片和真实图片（训练样本）的工作交给了一个新的神经网络--判别器。判别器是一个分类神经网络，它也会被不停的训练和提升，它的工作原理和生成器相反：通过要找到生成图片和真实图片（训练样本）的概率分布不同，并通过神经网络将误差反向传播到判别器，不停的修正，最大化差异，使判别器能判别出生成的图片和真实图片。一个最小化差异，一个最大化差异，两个神经网络进行对抗。最后，生成器能生成以假乱真的图片，直到判别器分辨不出来为止（50%）。<br>
 ## 数学表达
 Ivan Goodfellow在2014年在[<Generative Adversarial Nets>](https://arxiv.org/pdf/1406.2661v1.pdf)中详细描述了GAN的实现过程，并使用简洁的数学表达式表示对抗生成网络：<br>
-![GAN formula](./assets/ganformula.png)
+![GAN formula](https://github.com/figoliu/GANs/blob/master/resources/ganformula.png)

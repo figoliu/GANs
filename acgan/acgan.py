@@ -6,10 +6,11 @@ from keras.layers import BatchNormalization, Activation, Embedding, ZeroPadding2
 from keras.layers.advanced_activations import LeakyReLU
 from keras.layers.convolutional import UpSampling2D, Conv2D
 from keras.models import Sequential, Model
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 class ACGAN():
     def __init__(self):
@@ -51,6 +52,13 @@ class ACGAN():
         self.combined = Model([noise, label], [valid, target_label])
         self.combined.compile(loss=losses,
             optimizer=optimizer)
+        
+        dirPath = os.path.join(os.getcwd(), 'models')
+        if not os.path.exists(dirPath):
+            os.makedirs(dirPath)
+        imgPath = os.path.join(os.getcwd(), 'images')
+        if not os.path.exists(imgPath):
+            os.makedirs(imgPath)
 
     def build_generator(self):
 
@@ -207,4 +215,4 @@ class ACGAN():
 
 if __name__ == '__main__':
     acgan = ACGAN()
-    acgan.train(epochs=14000, batch_size=32, sample_interval=500)
+    acgan.train(epochs=10000, batch_size=32, sample_interval=500)

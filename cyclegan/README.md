@@ -7,28 +7,28 @@
 
 # 示例
 <p align="center">
-    <img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/0_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/0_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/0_2.png" width='400'\>
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/0_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/0_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/0_2.png" width='400'\>
 </p>
 <p align="center">
     输入的图片、转换成另一种风格图片、再转换为原图片
 </p>
 <br>
 <p align="center">
-    <img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/50_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/50_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/50_2.png" width='400'\>
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/50_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/50_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/50_2.png" width='400'\>
 </p>
 <p align="center">
     50个epoch后输入的图片、转换成另一种风格图片、再转换为原图片
 </p>
 <br>
 <p align="center">
-    <img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/100_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/100_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/100_2.png" width='400'\>
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/100_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/100_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/100_2.png" width='400'\>
 </p>
 <p align="center">
     100个epoch后输入的图片、转换成另一种风格图片、再转换为原图片
 </p>
 <br>
 <p align="center">
-    <img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/200_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/200_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/assets/cyclegan/200_2.png" width='400'\>
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/200_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/200_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/200_2.png" width='400'\>
 </p>
 <p align="center">
     200个epoch后输入的图片、转换成另一种风格图片、再转换为原图片

@@ -42,4 +42,4 @@ class DataLoader():
 
 
     def imread(self, path):
-        return skimage.io.imread(path).astype(np.float)
+        return skimage.io.imread(path, plugin='matplotlib').astype(np.float)

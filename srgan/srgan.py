@@ -56,7 +56,7 @@ class SRGAN():
 
         # Configure data loader
         # self.dataset_name = 'img_align_celeba'
-        self.dataset_name = 'coco2017'
+        self.dataset_name = 'originalPics'
         self.data_loader = DataLoader(dataset_name=self.dataset_name,
                                       img_res=self.hr_shape)
 
@@ -97,6 +97,13 @@ class SRGAN():
         self.combined.compile(loss=['binary_crossentropy', 'mse'],
                               loss_weights=[1e-3, 1],
                               optimizer=optimizer)
+
+        dirPath = os.path.join(os.getcwd(), 'models')
+        if not os.path.exists(dirPath):
+            os.makedirs(dirPath)
+        imgPath = os.path.join(os.getcwd(), 'images')
+        if not os.path.exists(imgPath):
+            os.makedirs(imgPath)
 
 
     def build_vgg(self):
@@ -191,8 +198,6 @@ class SRGAN():
 
     def train(self, epochs, batch_size=1, sample_interval=50):
 
-        start_time = datetime.datetime.now()
-
         for epoch in range(epochs):
 
             # ----------------------
@@ -229,12 +234,12 @@ class SRGAN():
             # Train the generators
             g_loss = self.combined.train_on_batch([imgs_lr, imgs_hr], [valid, image_features])
 
-            elapsed_time = datetime.datetime.now() - start_time
             # Plot the progress
-            print ("%d time: %s" % (epoch, elapsed_time))
+            print ("%d [D loss: %f] [G loss: %f]" % (epoch, d_loss[0], g_loss[0]))
 
             # If at save interval => save generated image samples
             if epoch % sample_interval == 0:
+                self.save_model()
                 self.sample_images(epoch)
 
     def sample_images(self, epoch):
@@ -262,13 +267,20 @@ class SRGAN():
         fig.savefig("images/%s/%d.png" % (self.dataset_name, epoch))
         plt.close()
 
-        # Save low resolution images for comparison
-        # for i in range(r):
-        #     fig = plt.figure()
-        #     plt.imshow(imgs_lr[i])
-        #     fig.savefig('images/%s/%d_lowres%d.png' % (self.dataset_name, epoch, i))
-        #     plt.close()
+    def save_model(self):
+    
+        def save(model, model_name):
+            model_path = "models/%s.json" % model_name
+            weights_path = "models/%s_weights.hdf5" % model_name
+            options = {"file_arch": model_path,
+                        "file_weight": weights_path}
+            json_string = model.to_json()
+            open(options['file_arch'], 'w').write(json_string)
+            model.save_weights(options['file_weight'])
+
+        save(self.generator, "generator")
+        save(self.discriminator, "discriminator")
 
 if __name__ == '__main__':
     gan = SRGAN()
-    gan.train(epochs=40000, batch_size=1, sample_interval=500)
+    gan.train(epochs=12100, batch_size=1, sample_interval=1000)

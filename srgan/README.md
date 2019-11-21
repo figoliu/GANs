@@ -52,19 +52,5 @@ python dataset_downloader.py
 ## 训练SRGAN
 
 ```sh
-python sr_train.py
-```
-
-## 测试SRGN
-
-测试模型
-
-```sh
-python sr_test.py test_model
-```
-
-测试生成效果
-
-```sh
-python sr_test test_lr_images
+python srgan.py
 ```

@@ -9,33 +9,33 @@ SRGACN目的是使用低分辨率图片生成自然的高分辨率图片。SRGAN
 <br>
 ## 示例
 <p align="center">
-    <img src="https://github.com/figoliu/GANs/blob/master/resources/acgan/0.png" width="640"\>
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/0.png" width="640"\>
     <br>
     输入的噪声图片
 </p>
 <br>
 <p align="center">
-    <img src="https://github.com/figoliu/GANs/blob/master/resources/acgan/200.png" width="640"\>
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/500.png" width="640"\>
     <br>
-    200个epoch后生成的图片
+    500个epoch后生成的图片
 </p>
 <br>
 <p align="center">
-    <img src="https://github.com/figoliu/GANs/blob/master/resources/acgan/1000.png" width="640"\>
-    <br>
-    1000个epoch后生成的图片
-</p>
-<br>
-<p align="center">
-    <img src="https://github.com/figoliu/GANs/blob/master/resources/acgan/5000.png" width="640"\>
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/5000.png" width="640"\>
     <br>
     5000个epoch后生成的图片
 </p>
 <br>
 <p align="center">
-    <img src="https://github.com/figoliu/GANs/blob/master/resources/acgan/14000.png" width="640"\>
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/10000.png" width="640"\>
     <br>
-    14000个epoch后生成的图片
+    10000个epoch后生成的图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/20000.png" width="640"\>
+    <br>
+    20000个epoch后生成的图片
 </p>
 <br>
 
@@ -52,19 +52,5 @@ python dataset_downloader.py
 ## 训练SRGAN
 
 ```sh
-python sr_train.py
-```
-
-## 测试SRGN
-
-测试模型
-
-```sh
-python sr_test.py test_model
-```
-
-测试生成效果
-
-```sh
-python sr_test test_lr_images
+python srgan.py
 ```

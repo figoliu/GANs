@@ -17,25 +17,25 @@ SRGACN目的是使用低分辨率图片生成自然的高分辨率图片。SRGAN
 <p align="center">
     <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/500.png" width="640"\>
     <br>
-    200个epoch后生成的图片
+    500个epoch后生成的图片
 </p>
 <br>
 <p align="center">
     <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/5000.png" width="640"\>
     <br>
-    1000个epoch后生成的图片
+    5000个epoch后生成的图片
 </p>
 <br>
 <p align="center">
     <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/10000.png" width="640"\>
     <br>
-    5000个epoch后生成的图片
+    10000个epoch后生成的图片
 </p>
 <br>
 <p align="center">
     <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/20000.png" width="640"\>
     <br>
-    14000个epoch后生成的图片
+    20000个epoch后生成的图片
 </p>
 <br>
 

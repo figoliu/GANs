@@ -18,6 +18,86 @@ Ivan Goodfellow在2014年在[Generative Adversarial Nets](https://arxiv.org/pdf/
 ![GAN formula](https://github.com/figoliu/GANs/blob/master/resources/ganformula.png)
 <br>这个公式非常简洁，意义前面已经介绍过，对于生成器G，最小化生成结果和真实结果之间的差异；对于判别器D，最大化生成结果和真实结果之间的差异；直到判别器无法判别（正确率50%）。
 
+##  示例
+### ACGAN
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/acgan/0.png" width="640"\>
+    <br>
+    输入的噪声图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/acgan/200.png" width="640"\>
+    <br>
+    200个epoch后生成的图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/acgan/1000.png" width="640"\>
+    <br>
+    1000个epoch后生成的图片
+</p>
+<br>
+### CYCLEGAN
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/0_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/0_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/0_2.png" width='400'\>
+</p>
+<p align="center">
+    输入的图片、转换成另一种风格图片、再转换为原图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/50_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/50_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/50_2.png" width='400'\>
+</p>
+<p align="center">
+    50个epoch后输入的图片、转换成另一种风格图片、再转换为原图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/100_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/100_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/100_2.png" width='400'\>
+</p>
+<p align="center">
+    100个epoch后输入的图片、转换成另一种风格图片、再转换为原图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/200_0.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/200_1.png" width='400'\><img src="https://github.com/figoliu/GANs/blob/master/resources/cyclegan/200_2.png" width='400'\>
+</p>
+<p align="center">
+    200个epoch后输入的图片、转换成另一种风格图片、再转换为原图片
+</p>
+<br>
+### SRGAN
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/0.png" width="640"\>
+    <br>
+    输入的噪声图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/500.png" width="640"\>
+    <br>
+    500个epoch后生成的图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/5000.png" width="640"\>
+    <br>
+    5000个epoch后生成的图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/10000.png" width="640"\>
+    <br>
+    10000个epoch后生成的图片
+</p>
+<br>
+<p align="center">
+    <img src="https://github.com/figoliu/GANs/blob/master/resources/srgan/20000.png" width="640"\>
+    <br>
+    20000个epoch后生成的图片
+</p>
+<br>
 ## 安装GANs
 
 GANs的后端基于Tensorflow，如果有GPU可用，则使用Tensorflow GPU版本：

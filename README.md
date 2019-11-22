@@ -98,6 +98,7 @@ Ivan Goodfellow在2014年在[Generative Adversarial Nets](https://arxiv.org/pdf/
     20000个epoch后生成的图片
 </p>
 <br>
+
 ## 安装GANs
 
 GANs的后端基于Tensorflow，如果有GPU可用，则使用Tensorflow GPU版本：
